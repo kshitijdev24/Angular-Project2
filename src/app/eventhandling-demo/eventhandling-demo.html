@@ -1,3 +1,3 @@
 <h1>Event Handling Demo</h1>
 <button (click)="incrementCount($event)">Click</button>
-<p>Count:{{count}}</p>
+<p [ngStyle]="{ 'background-color': bgColor }" (mouseover)="changeBackground()">Count={{count}}</p>
