@@ -4,6 +4,7 @@ import { UserDetails } from './user-details/user-details';
 import { FacultyDetails } from './faculty-details/faculty-details';
 import { EventhandlingDemo } from './eventhandling-demo/eventhandling-demo';
 import { AttributeEx } from './attribute-ex/attribute-ex';
+
 @Component({
   selector: 'app-root',
   imports: [ UserDetails, FacultyDetails, EventhandlingDemo,AttributeEx],
