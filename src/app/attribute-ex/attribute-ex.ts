@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
 import { NgClass } from "@angular/common";
 import { FormsModule } from '@angular/forms';
+import { ReversePipe } from '../reverse-pipe';
 
 @Component({ 
   selector: 'app-attribute-ex',
-  imports: [NgClass,FormsModule],
+  imports: [NgClass,FormsModule,ReversePipe],
   templateUrl: './attribute-ex.html',
   styleUrl: './attribute-ex.css',
 })
 export class AttributeEx {
   isChanged = false;
-  userName='Kshitij '
+  userName = 'Kshitij '
+  message:string='hi testing the cutom pipe'
   changeStyle() {
     this.isChanged = !this.isChanged;
   }
